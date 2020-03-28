@@ -6,8 +6,8 @@ class SearchBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            term: '',
-            location: '',
+            term: 'Pizza',
+            location: 'New York',
             sortBy: 'best_match',
         };
         this.sortByOptions = {
@@ -68,7 +68,7 @@ class SearchBar extends React.Component {
                 </div>
                 <div className="SearchBar-submit">
                     <button onClick={this.handleSearch}>Let's Go</button>
-                </div>
+                </div> 
             </div>
         );
     }
